@@ -25,7 +25,7 @@ public class Config {
 
     @Bean
     public CacheManager cacheManager() {
-        CaffeineCacheManager cacheManager = new CaffeineCacheManager("myCache");
+        CaffeineCacheManager cacheManager = new CaffeineCacheManager("searchResults");
         cacheManager.setCaffeine(Caffeine.newBuilder()
                 .initialCapacity(100)
                 .maximumSize(500)
